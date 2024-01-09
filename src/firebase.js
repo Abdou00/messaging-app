@@ -5,12 +5,12 @@ import 'firebase/database';    // for realtime database
 import 'firebase/firestore';   // for cloud firestore
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCVxm_NZeG9H9m7jQwK405ELIg8HmFgHig",
-    authDomain: "messaging-app-f68c7.firebaseapp.com",
-    projectId: "messaging-app-f68c7",
-    storageBucket: "messaging-app-f68c7.appspot.com",
-    messagingSenderId: "327941391448",
-    appId: "1:327941391448:web:6490973eb8b7ad5882b62d"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID,
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
